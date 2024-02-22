@@ -3,7 +3,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>It Works!</h1>
+      
+    </div>
+  );
+}
+
+function SplashScleen() {
+  return (
+    <div id="splash-scleen" className="">
+      
     </div>
   );
 }
