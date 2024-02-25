@@ -1,20 +1,19 @@
 import React from 'react';
 import './scss/App.scss';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <SplashScleen />
+      <SplashScreen />
     </div>
   );
 }
 
-function SplashScleen() {
+function SplashScreen() {
   return (
-    <div id="splash-scleen" className="splash-scleen--black flex--container">
-      <h1>HayashiTomoya</h1>
-    </div>
+    <section id="splash-screen" className="splash-screen--bg-black">
+        <h1 id="name" className="splash__titles margin--auto">Hayashi Tomoya</h1>
+        <h1 id="title" className="splash__titles margin--auto">Web-Portfolio</h1>
+    </section>
   );
 }
-
-export default App;

@@ -1,8 +1,39 @@
-.flex {
-    &--container {
-        display: flex;
+@use "./variables";
+
+.font__size {
+    &--5rem {
+        font-size: 5rem;
     }
-    &--item {
-        display: block;
+}
+
+.font__color {
+    &--white {
+        color: variables.$color-white;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    &__direction--row {
+        @extend .flex-container;
+        flex-direction: row;
+    }
+}
+
+.flex-item {
+    display: block;
+}
+
+.margin {
+    &--auto {
+        margin: auto;
+    }
+}
+
+.align {
+    &--center {
+        margin-right: auto;
+        margin-left: auto;
     }
 }

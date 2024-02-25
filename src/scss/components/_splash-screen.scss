@@ -1,0 +1,17 @@
+@use "../base/variables";
+@use "../base/layout";
+
+.splash-screen {
+    width: 100vw;
+    height: 100vh;
+    @extend .flex-container__direction--row;
+    &--bg-black {
+        @extend .splash-screen;
+        background-color: variables.$color-black;;
+    }
+}
+
+.splash__titles {
+    @extend .font__size--5rem;
+    @extend .font__color--white;
+}
