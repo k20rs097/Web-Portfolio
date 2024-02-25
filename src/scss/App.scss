@@ -1,15 +1,8 @@
-.width__100vw {
-  width: 100vw;
-}
+// base
+// 基本の設定
+@use "./base/reset";
+@use "./base/layout";
 
-
-
-/* 多分使わない */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// components
+// レイアウトの管理を行う
+@use "./components/splash-scleen";
