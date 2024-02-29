@@ -1,23 +1,33 @@
 @use "./variables";
 
-.font__size {
+.font-size {
     &--5rem {
         font-size: 5rem;
     }
 }
 
-.font__color {
+.font-color {
     &--white {
         color: variables.$color-white;
     }
 }
 
-.flex-container {
+.flex-container__direction {
     display: flex;
     justify-content: space-around;
-    &__direction--row {
-        @extend .flex-container;
+    &--row {
+        @extend .flex-container__direction;
         flex-direction: row;
+    }
+    &--column {
+        @extend .flex-container__direction;
+        flex-direction: column;
+    }
+}
+
+.width {
+    &--100vw {
+        width: 100vw;
     }
 }
 
@@ -29,11 +39,50 @@
     &--auto {
         margin: auto;
     }
+    &--0 {
+        margin: 0;
+    }
+}
+
+.padding {
+    &--auto {
+        padding: auto;
+    }
+    &--0 {
+        padding: 0;
+    }
 }
 
 .align {
     &--center {
         margin-right: auto;
         margin-left: auto;
+    }
+}
+
+.top {
+    &--0 {
+        top: 0;
+    }
+}
+
+.position {
+    &--fixed {
+        position: fixed;
+    }
+}
+
+.justify-content {
+    &--space-between {
+        justify-content: space-between;
+    }
+}
+
+.z-index {
+    &--0 {
+        z-index: 0;
+    }
+    &--1 {
+        z-index: 1;
     }
 }

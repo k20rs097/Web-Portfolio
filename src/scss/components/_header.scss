@@ -1,0 +1,31 @@
+@use "../base/variables";
+@use "../base/layout";
+
+.header {
+    @extend .top--0;
+    @extend .margin--0;
+    @extend .padding--0;
+    @extend .width--100vw;
+    @extend .position--fixed;
+    @extend .flex-container__direction--row;
+    @extend .justify-content--space-between;
+    @extend .z-index--1;
+    background-color: variables.$nav-area-background-color;
+}
+
+.menu-group {
+    padding: 1.0rem;
+}
+
+.menu-item {
+    font-size: 1.5rem;
+    padding-left: 1.0rem;
+    display: inline-block;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 1.0rem;
+    margin: 0;
+}

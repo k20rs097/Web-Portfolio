@@ -1,0 +1,6 @@
+@use "../base/variables";
+@use "../base/layout";
+
+.skill-sheet {
+    @extend .flex-container__direction--column;
+}
