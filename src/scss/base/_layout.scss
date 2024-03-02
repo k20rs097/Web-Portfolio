@@ -25,12 +25,6 @@
     }
 }
 
-.width {
-    &--100vw {
-        width: 100vw;
-    }
-}
-
 .flex-item {
     display: block;
 }
@@ -38,9 +32,6 @@
 .margin {
     &--auto {
         margin: auto;
-    }
-    &--0 {
-        margin: 0;
     }
 }
 
@@ -57,12 +48,6 @@
     &--center {
         margin-right: auto;
         margin-left: auto;
-    }
-}
-
-.top {
-    &--0 {
-        top: 0;
     }
 }
 

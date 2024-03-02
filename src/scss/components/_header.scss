@@ -2,14 +2,13 @@
 @use "../base/layout";
 
 .header {
-    @extend .top--0;
-    @extend .margin--0;
-    @extend .padding--0;
-    @extend .width--100vw;
-    @extend .position--fixed;
+    top: 0;
+    margin: 0; padding: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
     @extend .flex-container__direction--row;
     @extend .justify-content--space-between;
-    @extend .z-index--1;
     background-color: variables.$nav-area-background-color;
 }
 

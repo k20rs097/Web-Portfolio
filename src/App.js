@@ -55,11 +55,11 @@ const Header = () => {
 const Footer = () => {
   return (
     <footer>
-      <div class="scroll-to-top-button text-align__center mr-ml__auto" id="scroll-to-top-button">
-          <i class="fa-regular fa-circle-up"></i>
+      <div className="scroll-to-top-button align--center" id="scroll-to-top-button">
+          <i className="fa-regular fa-circle-up"></i>
       </div>
-      <div class="copyright">
-          <p>(c) 2024 Hayashi Tomoya All Rights Reserved.</p>
+      <div className="copyright">
+          <p className="copyright-text">(c) 2024 Hayashi Tomoya All Rights Reserved.</p>
       </div>
     </footer>
   );
