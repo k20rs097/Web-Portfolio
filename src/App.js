@@ -6,7 +6,16 @@ export default function App() {
     <div className="App">
       <Header />
       <SplashScreen />
+      <Content />
       <Footer />
+    </div>
+  );
+}
+
+const Content = () => {
+  return (
+    <div className="content align--centerX">
+        <SkillSheet />        
     </div>
   );
 }
@@ -23,15 +32,25 @@ const SplashScreen = () => {
 const SkillSheet = () => {
   return (
     <div className="skill-sheet">
-
+      <SkillCard
+        name="Hayashi Tomoya"
+        bio="こんにちは！"
+      />
+      <SkillCard
+        name="Hayashi Tomoya"
+        bio="こんにちは！"
+      />
     </div>
   );
 }
 
-const SkillCard = () => {
+const SkillCard = ({ name, bio }) => {
   return (
     <div className="skill-card">
-
+      <div className="skill-info">
+        <h2 className="skill-name">{name}</h2>
+        <p className="skill-info">{bio}</p>
+      </div>
     </div>
   );
 }
@@ -43,9 +62,9 @@ const Header = () => {
       <nav className="navbar">
           <ul className="menu-group">
               <li className="menu-item"><a href="#hero">HOME</a></li>
-              <li className="menu-item"><a href="#">経歴</a></li>
-              <li className="menu-item"><a href="#">研究室</a></li>
-              <li className="menu-item"><a href="#">自主開発</a></li>
+              <li className="menu-item"><a href="">経歴</a></li>
+              <li className="menu-item"><a href="">研究室</a></li>
+              <li className="menu-item"><a href="">自主開発</a></li>
           </ul>
       </nav>
     </header>
@@ -55,7 +74,7 @@ const Header = () => {
 const Footer = () => {
   return (
     <footer>
-      <div className="scroll-to-top-button align--center" id="scroll-to-top-button">
+      <div id="scroll-to-top-button" className="scroll-button align--centerX">
           <i className="fa-regular fa-circle-up"></i>
       </div>
       <div className="copyright">

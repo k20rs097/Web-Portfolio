@@ -25,6 +25,10 @@
     }
 }
 
+.content {
+    width: 80vw;
+}
+
 .flex-item {
     display: block;
 }
@@ -45,7 +49,7 @@
 }
 
 .align {
-    &--center {
+    &--centerX {
         margin-right: auto;
         margin-left: auto;
     }
