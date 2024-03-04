@@ -32,16 +32,16 @@ const SplashScreen = () => {
 const SkillSheet = () => {
   return (
     <div className="skill-sheet">
-      <SkillCard 
-        name="Hayashi Tomoya"
-        bio="Hello!"
-        skillLevel={2}
+      <SkillCard
+        language="HTML"
+        skillLevel={3}
+        about=""
       />
     </div>
   );
 }
 
-const SkillCard = ({ name, bio, skillLevel }) => {
+const SkillCard = ({ language, languageIcon, skillLevel, about }) => {
   const solidStars = Array(skillLevel).fill().map((_, index) => (
     <i key={`solid-star-${index}`} className="fa-solid fa-star"></i>
   ));
@@ -53,8 +53,8 @@ const SkillCard = ({ name, bio, skillLevel }) => {
   return (
     <div className="skill-card">
       <div className="skill-info">
-        <h2 className="skill-name">{name}</h2>
-        <p className="skill-info">{bio}</p>
+        <h1 className="skill-name">{language}</h1>
+        <p className="skill-about">{about}</p>
         <div className="stars">
           {solidStars}
           {regularStars}
