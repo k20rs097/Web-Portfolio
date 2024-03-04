@@ -42,22 +42,23 @@ const SkillSheet = () => {
 }
 
 const SkillCard = ({ name, bio, skillLevel }) => {
+  const solidStars = Array(skillLevel).fill().map((_, index) => (
+    <i key={`solid-star-${index}`} className="fa-solid fa-star"></i>
+  ));
+
+  const regularStars = Array(5 - skillLevel).fill().map((_, index) => (
+    <i key={`regular-star-${index}`} className="fa-regular fa-star"></i>
+  ));
+
   return (
     <div className="skill-card">
       <div className="skill-info">
         <h2 className="skill-name">{name}</h2>
         <p className="skill-info">{bio}</p>
-        {( () => {
-            let stars = [];
-            for (let i = 0; i < skillLevel; i++) {
-              stars.push(<i key={i} className="fa-solid fa-star"></i>);
-            }
-            for (let i = 0; i < 5-skillLevel; i++) {
-              stars.push(<i key={skillLevel + i} className="fa-regular fa-star"></i>)
-            }
-            return stars;
-          })()
-        }
+        <div className="stars">
+          {solidStars}
+          {regularStars}
+        </div>
       </div>
     </div>
   );
