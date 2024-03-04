@@ -32,24 +32,32 @@ const SplashScreen = () => {
 const SkillSheet = () => {
   return (
     <div className="skill-sheet">
-      <SkillCard
+      <SkillCard 
         name="Hayashi Tomoya"
-        bio="こんにちは！"
-      />
-      <SkillCard
-        name="Hayashi Tomoya"
-        bio="こんにちは！"
+        bio="Hello!"
+        skillLevel={2}
       />
     </div>
   );
 }
 
-const SkillCard = ({ name, bio }) => {
+const SkillCard = ({ name, bio, skillLevel }) => {
   return (
     <div className="skill-card">
       <div className="skill-info">
         <h2 className="skill-name">{name}</h2>
         <p className="skill-info">{bio}</p>
+        {( () => {
+            let stars = [];
+            for (let i = 0; i < skillLevel; i++) {
+              stars.push(<i key={i} className="fa-solid fa-star"></i>);
+            }
+            for (let i = 0; i < 5-skillLevel; i++) {
+              stars.push(<i key={skillLevel + i} className="fa-regular fa-star"></i>)
+            }
+            return stars;
+          })()
+        }
       </div>
     </div>
   );

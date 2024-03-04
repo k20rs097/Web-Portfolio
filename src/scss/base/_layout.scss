@@ -15,6 +15,7 @@
 .flex-container__direction {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     &--row {
         @extend .flex-container__direction;
         flex-direction: row;

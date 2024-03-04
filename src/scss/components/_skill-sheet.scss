@@ -2,5 +2,15 @@
 @use "../base/layout";
 
 .skill-sheet {
-    @extend .flex-container__direction--column;
+    @extend .flex-container__direction--row;
+}
+
+.skill-card {
+    @extend .flex-item;
+    min-width: 40rem;
+    min-height: 30rem;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: antiquewhite;
 }
