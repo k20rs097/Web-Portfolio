@@ -15,7 +15,6 @@
 .flex-container__direction {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     &--row {
         @extend .flex-container__direction;
         flex-direction: row;
@@ -28,6 +27,8 @@
 
 .content {
     width: 80vw;
+    height: 10.0rem;
+    background-color: aqua;
 }
 
 .flex-item {

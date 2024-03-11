@@ -1,5 +1,8 @@
 import React from 'react';
 import './scss/App.scss';
+import mySkills from './json/mySkills.json';
+
+const skillData = mySkills.data;
 
 export default function App() {
   return (
@@ -15,7 +18,7 @@ export default function App() {
 const Content = () => {
   return (
     <div className="content align--centerX">
-        <SkillSheet />        
+        <SkillSheet/>
     </div>
   );
 }
@@ -23,8 +26,8 @@ const Content = () => {
 const SplashScreen = () => {
   return (
     <section id="splash-screen" className="splash-screen--bg-black">
-        <h1 id="name" className="splash__titles margin--auto">Hayashi Tomoya</h1>
-        <h1 id="title" className="splash__titles margin--auto">Web-Portfolio</h1>
+        <h1 id="name" className="splash-titles margin--auto">Hayashi Tomoya</h1>
+        <h1 id="title" className="splash-titles margin--auto">Web-Portfolio</h1>
     </section>
   );
 }
@@ -33,29 +36,30 @@ const SkillSheet = () => {
   return (
     <div className="skill-sheet">
       <SkillCard
-        language="HTML"
-        skillLevel={3}
-        about=""
+        lang={skillData.html}
+      />
+      <SkillCard
+        lang={skillData.css}
       />
     </div>
   );
 }
 
-const SkillCard = ({ language, languageIcon, skillLevel, about }) => {
-  const solidStars = Array(skillLevel).fill().map((_, index) => (
+const SkillCard = ({ lang }) => {
+  const solidStars = Array(lang.skillLevel).fill().map((_, index) => (
     <i key={`solid-star-${index}`} className="fa-solid fa-star"></i>
   ));
 
-  const regularStars = Array(5 - skillLevel).fill().map((_, index) => (
+  const regularStars = Array(5 - lang.skillLevel).fill().map((_, index) => (
     <i key={`regular-star-${index}`} className="fa-regular fa-star"></i>
   ));
 
   return (
     <div className="skill-card">
       <div className="skill-info">
-        <h1 className="skill-name">{language}</h1>
-        <p className="skill-about">{about}</p>
-        <div className="stars">
+        <h1 className="language">{lang.language}</h1>
+        <p className="about">{lang.about}</p>
+        <div className="skill-level">
           {solidStars}
           {regularStars}
         </div>

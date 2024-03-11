@@ -1,0 +1,18 @@
+{
+    "data": {
+        "html": {
+            "language": "HTML5",
+            "languageIcon": "",
+            "experienceYear": 4,
+            "skillLevel": 3,
+            "about": ""
+        },
+        "css": {
+            "language": "CSS3",
+            "languageIcon": "",
+            "experienceYear": 4,
+            "skillLevel": 3,
+            "about": ""
+        }
+    }
+}
