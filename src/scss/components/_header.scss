@@ -7,24 +7,29 @@
     width: 100vw;
     position: fixed;
     z-index: 1;
-    @extend .flex-container__direction--row;
-    @extend .justify-content--space-between;
     background-color: variables.$nav-area-background-color;
 }
 
+.header-container {
+    align-items: center;
+    @extend .flex-container__direction--row;
+    @extend .justify-content--space-around;
+}
+
 .menu-group {
-    padding: 1.0rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .menu-item {
-    font-size: 1.5rem;
-    padding-left: 1.0rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: inline-block;
 }
 
 .header-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: normal;
-    padding: 1.0rem;
+    padding: 1rem;
     margin: 0;
 }

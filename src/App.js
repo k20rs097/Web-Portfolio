@@ -6,7 +6,7 @@ const skillData = mySkills.data;
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App flex-container__direction--column">
       <Header />
       <SplashScreen />
       <Content />
@@ -17,7 +17,7 @@ export default function App() {
 
 const Content = () => {
   return (
-    <div className="content align--centerX">
+    <div className="content flex-item .justify-content--center">
         <SkillSheet/>
     </div>
   );
@@ -71,15 +71,17 @@ const SkillCard = ({ lang }) => {
 const Header = () => {
   return (
     <header className="header">
-      <h1 id="title" className="header-title"><a href="#splash-screen">Web-Portfolio</a></h1>
-      <nav className="navbar">
-          <ul className="menu-group">
-              <li className="menu-item"><a href="#hero">HOME</a></li>
-              <li className="menu-item"><a href="">経歴</a></li>
-              <li className="menu-item"><a href="">研究室</a></li>
-              <li className="menu-item"><a href="">自主開発</a></li>
-          </ul>
-      </nav>
+      <div className="header-container">
+        <h1 id="title" className="header-title"><a href="#splash-screen">Web-Portfolio</a></h1>
+        <nav className="navbar">
+            <ul className="menu-group">
+                <li className="menu-item"><a href="#hero">HOME</a></li>
+                <li className="menu-item"><a href="">経歴</a></li>
+                <li className="menu-item"><a href="">研究室</a></li>
+                <li className="menu-item"><a href="">自主開発</a></li>
+            </ul>
+        </nav>
+      </div>
     </header>
   );
 }
