@@ -3,6 +3,7 @@
 
 .skill-sheet {
     @extend .flex-container__direction--row;
+    @extend .justify-content--center
 }
 
 .skill-card {
