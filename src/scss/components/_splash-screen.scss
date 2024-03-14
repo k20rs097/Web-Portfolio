@@ -7,7 +7,7 @@
     @extend .flex-container__direction--row;
     &--bg-black {
         @extend .splash-screen;
-        background-color: variables.$color-black;;
+        background-color: variables.$color-black;
     }
 }
 

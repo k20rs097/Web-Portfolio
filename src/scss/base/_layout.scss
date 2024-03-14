@@ -1,8 +1,17 @@
 @use "./variables";
 
+.bg--dark-blue {
+    background-color: variables.$app-background-color;
+}
+
+.background {
+    background: variables.$app-background-color;
+    background: linear-gradient(90deg, variables.$app-background-color 0%, variables.$app-background-color--2 50%, variables.$app-background-color 100%);
+}
+
 .content {
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .font-size {

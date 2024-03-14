@@ -6,9 +6,9 @@ const Header = () => {
           <nav className="navbar">
               <ul className="menu-group">
                   <li className="menu-item"><a href="#hero">HOME</a></li>
-                  <li className="menu-item"><a href="">経歴</a></li>
-                  <li className="menu-item"><a href="">研究室</a></li>
-                  <li className="menu-item"><a href="">自主開発</a></li>
+                  <li className="menu-item"><a href="">PROFILE</a></li>
+                  <li className="menu-item"><a href="">SEMINAR</a></li>
+                  <li className="menu-item"><a href="">WORKS</a></li>
               </ul>
           </nav>
         </div>
