@@ -13,6 +13,34 @@
             "experienceYear": 4,
             "skillLevel": 3,
             "about": ""
+        },
+        "javaScript": {
+            "language": "JavaScript",
+            "languageIcon": "",
+            "experienceYear": 4,
+            "skillLevel": 2,
+            "about": ""
+        },
+        "python": {
+            "language": "Python",
+            "languageIcon": "",
+            "experienceYear": 2,
+            "skillLevel": 1,
+            "about": ""
+        },
+        "swift": {
+            "language": "Swift",
+            "languageIcon": "",
+            "experienceYear": 1,
+            "skillLevel": 3,
+            "about": ""
+        },
+        "kotlin": {
+            "language": "Kotlin",
+            "languageIcon": "",
+            "experienceYear": 1,
+            "skillLevel": 2,
+            "about": ""
         }
     }
 }
