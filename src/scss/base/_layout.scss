@@ -6,7 +6,11 @@
 
 .background {
     background: variables.$app-background-color;
-    background: linear-gradient(90deg, variables.$app-background-color 0%, variables.$app-background-color--2 50%, variables.$app-background-color 100%);
+    background: linear-gradient(90deg, 
+                                variables.$app-background-color 0%,
+                                variables.$app-background-color--2 50%,
+                                variables.$app-background-color 100%
+                                );
 }
 
 .content {
