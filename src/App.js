@@ -18,17 +18,17 @@ export default function App() {
 
 const Content = () => {
   return (
-    <div className="content">
+    <section className="content">
       <Profile />
       <SkillSheet/>
-    </div>
+    </section>
   );
 }
 
 const SplashScreen = () => {
   return (
-    <section id="splash-screen" className="splash-screen">
+    <div id="splash-screen" className="splash-screen">
         <h1 id="name" className="splash-titles margin--auto">Tomoya's Portfolio</h1>
-    </section>
+    </div>
   );
 }
