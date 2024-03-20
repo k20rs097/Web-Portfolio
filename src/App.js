@@ -28,7 +28,7 @@ const Content = () => {
 const SplashScreen = () => {
   return (
     <div id="splash-screen" className="splash-screen">
-        <h1 id="name" className="splash-titles margin--auto">Tomoya's Portfolio</h1>
+        <h1 id="name" className="splash-titles">Tomoya's Portfolio</h1>
     </div>
   );
 }

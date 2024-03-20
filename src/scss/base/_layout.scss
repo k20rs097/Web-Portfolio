@@ -18,18 +18,6 @@
     margin: 0 auto;
 }
 
-.font-size {
-    &--5rem {
-        font-size: 5rem;
-    }
-}
-
-.font-color {
-    &--white {
-        color: variables.$color-white;
-    }
-}
-
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -47,43 +35,9 @@
     display: block;
 }
 
-.margin {
-    &--auto {
-        margin: auto;
-    }
-}
-
-.padding {
-    &--auto {
-        padding: auto;
-    }
-    &--0 {
-        padding: 0;
-    }
-}
-
-.align {
-    &--centerX {
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
 .position {
     &--fixed {
         position: fixed;
-    }
-}
-
-.justify-content {
-    &--space-between {
-        justify-content: space-between;
-    }
-    &--space-around {
-        justify-content: space-around;
-    }
-    &--center {
-        justify-content: center;
     }
 }
 

@@ -11,9 +11,9 @@
 }
 
 .header-container {
-    align-items: center;
     @extend .flex-container__direction--row;
-    @extend .justify-content--space-around;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .menu-group {
