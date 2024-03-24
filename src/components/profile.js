@@ -1,3 +1,9 @@
+import profileImage from "../media/img/topIcon.png";
+import myProfile from "../json/myProfile.json";
+
+const profileData = myProfile.data.profile;
+
+
 const Profile = () => {
     return (
         <section id="profile" className="profile">
@@ -5,17 +11,13 @@ const Profile = () => {
             <div className="grid-wrapper">
                 <div className="grid-content--image">
                     <img
-                        className="fit-picture"
-                        src="./media/img/topIcon.png"
+                        className="profile-icon"
+                        src={profileImage}
                         alt="An Otter Icon" />
                 </div>
-                <div className="grid-content--title">Hayashi Tomoya</div>
+                <div className="grid-content--title">{profileData.name}</div>
                 <div className="grid-content--title">
-                    <p>
-                        2001年12月21日生まれ。<br />
-                        エンジニアを目指して勉強・就活中。<br />
-                        好きな食べ物はカレーです。
-                    </p>
+                    <p>{profileData.introduction}</p>
                 </div>
             </div>
         </section>
