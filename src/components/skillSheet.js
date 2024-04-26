@@ -4,30 +4,24 @@ const skillData = mySkills.data;
 
 const SkillSheet = () => {
     return (
-      <div className="skill-sheet">
+      <div id="skills" className="wrapper">
         <SkillCard
           lang={skillData.html}
-          type="skill-card--large"
         />
         <SkillCard
           lang={skillData.css}
-          type="skill-card--regular"
         />
         <SkillCard
           lang={skillData.javaScript}
-          type="skill-card--regular"
         />
         <SkillCard
           lang={skillData.python}
-          type="skill-card--regular"
         />
         <SkillCard
           lang={skillData.swift}
-          type="skill-card--regular"
         />
         <SkillCard
           lang={skillData.kotlin}
-          type="skill-card--regular"
         />
       </div>
     );
@@ -43,7 +37,7 @@ const SkillCard = ({ lang, type }) => {
     ));
 
     return (
-      <div className="skill-card--regular">
+      <div className="card">
         <div className="skill-info">
           <h1 className="language">{lang.language}</h1>
           <p className="about">{lang.about}</p>
