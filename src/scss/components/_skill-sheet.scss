@@ -1,16 +1,33 @@
 @use "../base/variables";
 @use "../base/layout";
 
-#skills .card {
-    display: block;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: variables.$color-black;
-    background-color: variables.$color-white;
-    margin-bottom: 1.5rem;
+// #skills .card {
+//     padding: 1rem;
+//     border-radius: 1rem;
+//     color: variables.$color-black;
+//     background-color: variables.$color-white;
+//     margin-bottom: 1.5rem;
+// }
+
+// #skills .wrapper {
+//     --auto-grid-min-size: 16rem;
+//     display: grid;
+//     grid-template-columns: repeat(autofill, minmax(var(--auto-grid-min-size), 1fr));
+//     width: 80%;
+// }
+
+.skill-wrapper {
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 24px 6%;
 }
 
-#skills .wrapper {
-    display: flex;
-    width: 80%;
+.card {
+  padding: 1rem;
+  border: 1px solid #000;
+  color: variables.$color-black;
+  background-color: variables.$color-white;
+  border-radius: 1rem;
 }

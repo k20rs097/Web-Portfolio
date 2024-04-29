@@ -4,7 +4,7 @@ const skillData = mySkills.data;
 
 const SkillSheet = () => {
     return (
-      <div id="skills" className="wrapper">
+      <ul id="skills" className="skill-wrapper">
         <SkillCard
           lang={skillData.html}
         />
@@ -23,7 +23,7 @@ const SkillSheet = () => {
         <SkillCard
           lang={skillData.kotlin}
         />
-      </div>
+      </ul>
     );
 }
 
@@ -37,7 +37,7 @@ const SkillCard = ({ lang, type }) => {
     ));
 
     return (
-      <div className="card">
+      <li className="card">
         <div className="skill-info">
           <h1 className="language">{lang.language}</h1>
           <p className="about">{lang.about}</p>
@@ -46,7 +46,7 @@ const SkillCard = ({ lang, type }) => {
             {regularStars}
           </div>
         </div>
-      </div>
+      </li>
     );
 }
 
