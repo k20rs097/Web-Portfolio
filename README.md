@@ -13,4 +13,3 @@
 
 ## 参考にしたウェブサイト
 <p>icon-generator shields.io -- <a href="https://t8csp.csb.app/">https://t8csp.csb.app/</a></p>
-
